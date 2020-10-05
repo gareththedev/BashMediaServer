@@ -1,0 +1,55 @@
+########################################
+#
+# Media configuration settings
+#
+########################################
+
+# System Settings
+#
+MEDIAROOT    = /media
+MEDIADISK    = D001 D002 D003 D004 D005
+MEDIAUSER    = pi
+MEDIAGROUP   = pi
+MEDIASHARE   = /media/Media
+MEDIAFOLDERS = Audio Document Image Software Video
+
+# Administrative operations requiring root permissions
+#
+CLEANLOST    = Y
+CLEANLINKS   = Y
+CLEANFOLDERS = Y
+FOLDERPERMS  = N
+FILEPERMS    = N
+
+# Standard operations 
+#
+SYNCMEDIA    = Y
+CONTENTLIST  = N
+BACKUP       = N
+STATISTICS   = Y
+
+# Backup operations
+#
+BACKUP01 = Bin                        * D001/Backup * Backup the bin folder to all discs
+BACKUP02 = Bin                        * D002/Backup
+BACKUP03 = Bin                        * D003/Backup
+BACKUP04 = Bin                        * D004/Backup
+BACKUP05 = Bin                        * D005/Backup
+BACKUP20 = D001/Audio                 * D004/Backup * Backup the single audio folder to 2 discs
+BACKUP21 = D001/Audio                 * D005/Backup
+BACKUP40 = D001/Document              * D004/Backup * Backup the single document folder to 2 discs
+BACKUP41 = D001/Document              * D005/Backup
+BACKUP60 = D001/Image                 * D004/Backup * Backup the single document folder to 2 discs
+BACKUP61 = D001/Image                 * D005/Backup
+BACKUP80 = D001/Video/Documentary/Dvf * D004/Backup/Video/Documentary
+BACKUP81 = D001/Video/Documentary/Dvf * D005/Backup/Video/Documentary
+BACKUP82 = D001/Video/Feature/Dvf     * D004/Backup/Video/Feature
+BACKUP83 = D001/Video/Feature/Dvf     * D005/Backup/Video/Feature
+BACKUP84 = D001/Video/Kids/Dvf        * D004/Backup/Video/Kids
+BACKUP85 = D001/Video/Kids/Dvf        * D005/Backup/Video/Kids
+BACKUP86 = D001/Video/Music/Dvf       * D004/Backup/Video/Music
+BACKUP87 = D001/Video/Music/Dvf       * D005/Backup/Video/Music
+BACKUP88 = D001/Video/Recording/Dvf   * D004/Backup/Video/Recording
+BACKUP89 = D001/Video/Recording/Dvf   * D005/Backup/Video/Recording
+BACKUP90 = D001/Video/Series/Dvf      * D004/Backup/Video/Series
+BACKUP91 = D001/Video/Series/Dvf      * D005/Backup/Video/Series
